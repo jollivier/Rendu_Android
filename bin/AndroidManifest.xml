@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tpandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/poi"
+        android:label="@string/title_app"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name="com.example.tpandroid.MainActivity"
+            android:label="@string/title_app" >
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.Loading"
+            android:label="@string/title_app" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.Liste"
+            android:label="@string/title_app" >
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.Map"
+            android:label="@string/title_app" >
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.Favoris"
+            android:label="@string/title_app" >
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.Detail"
+            android:label="@string/title_app" >
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.DetailFav"
+            android:label="@string/title_app" >
+        </activity>
+    </application>
+
+</manifest>
